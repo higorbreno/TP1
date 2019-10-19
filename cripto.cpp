@@ -47,12 +47,12 @@ unsigned int Decodificar(unsigned long long bit64) {
 	unsigned int bit32 = bit64 >> 32; // Guarda o valor codificaddo em uma variável de 32 bits
 	unsigned int posicoes = bit64; // Guarda as posições dos bits invertidos em uma variável de 32 bits
 
-	unsigned short posicao1 = ((posicoes << 25) >> 27); // Pega a primeira posição transformando os bits ao seu redor em zero
-	unsigned short posicao2 = ((posicoes << 20) >> 27); // Pega a segunda posição transformando os bits ao seu redor em zero
-	unsigned short posicao3 = ((posicoes << 15) >> 27); // Pega a terceira posição transformando os bits ao seu redor em zero
-	unsigned short posicao4 = ((posicoes << 10) >> 27); // Pega a quarta posição transformando os bits ao seu redor em zero
-	unsigned short posicao5 = ((posicoes << 5) >> 27); // Pega a quinta posição transformando os bits ao seu redor em zero
-	unsigned short posicao6 = posicoes >> 27; // Pega a sexta posição transformando os bits ao seu redor em zero
+	unsigned short posicao1 = posicoes >> 27; // Pega a primeira posição transformando os bits ao seu redor em zero
+	unsigned short posicao2 = ((posicoes << 5) >> 27); // Pega a segunda posição transformando os bits ao seu redor em zero
+	unsigned short posicao3 = ((posicoes << 10) >> 27); // Pega a terceira posição transformando os bits ao seu redor em zero
+	unsigned short posicao4 = ((posicoes << 15) >> 27); // Pega a quarta posição transformando os bits ao seu redor em zero
+	unsigned short posicao5 = ((posicoes << 20) >> 27); // Pega a quinta posição transformando os bits ao seu redor em zero
+	unsigned short posicao6 = ((posicoes << 25) >> 27); // Pega a sexta posição transformando os bits ao seu redor em zero
 
 	bit32 = TestarBit(bit32, posicao1) ? DesligarBit(bit32, posicao1) : LigarBit(bit32, posicao1); // Inverte o bit do valor codificado na primeira posição especificada
 	bit32 = TestarBit(bit32, posicao2) ? DesligarBit(bit32, posicao2) : LigarBit(bit32, posicao2); // Inverte o bit do valor codificado na segunda posição especificada

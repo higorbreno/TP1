@@ -76,19 +76,19 @@ int main() {
 	unsigned int multCripto32 = multCripto >> 32; // Guarda o valor de 32 bits codificado da multiplicação
 	unsigned int multPosicoes = multCripto; // Guarda as posições dos bits invetidos no valor de 32 bits da soma
 
-	unsigned short somaPosicao1 = ((somaPosicoes << 25) >> 27); // Pega a primeira posição da soma transformando os bits ao seu redor em zero
-	unsigned short somaPosicao2 = ((somaPosicoes << 20) >> 27); // Pega a segunda posição da soma transformando os bits ao seu redor em zero
-	unsigned short somaPosicao3 = ((somaPosicoes << 15) >> 27); // Pega a terceira posição da soma transformando os bits ao seu redor em zero
-	unsigned short somaPosicao4 = ((somaPosicoes << 10) >> 27); // Pega a quarta posição da soma transformando os bits ao seu redor em zero
-	unsigned short somaPosicao5 = ((somaPosicoes << 5) >> 27); // Pega a quinta posição da soma transformando os bits ao seu redor em zero
-	unsigned short somaPosicao6 = somaPosicoes >> 27; // Pega a sexta posição da soma transformando os bits ao seu redor em zero
+	unsigned short somaPosicao1 = somaPosicoes >> 27; // Pega a primeira posição da soma transformando os bits ao seu redor em zero
+	unsigned short somaPosicao2 = ((somaPosicoes << 5) >> 27); // Pega a segunda posição da soma transformando os bits ao seu redor em zero
+	unsigned short somaPosicao3 = ((somaPosicoes << 10) >> 27); // Pega a terceira posição da soma transformando os bits ao seu redor em zero
+	unsigned short somaPosicao4 = ((somaPosicoes << 15) >> 27); // Pega a quarta posição da soma transformando os bits ao seu redor em zero
+	unsigned short somaPosicao5 = ((somaPosicoes << 20) >> 27); // Pega a quinta posição da soma transformando os bits ao seu redor em zero
+	unsigned short somaPosicao6 = ((somaPosicoes << 25) >> 27); // Pega a sexta posição da soma transformando os bits ao seu redor em zero
 
-	unsigned short multPosicao1 = ((multPosicoes << 25) >> 27); // Pega a primeira posição da multiplicação transformando os bits ao seu redor em zero
-	unsigned short multPosicao2 = ((multPosicoes << 20) >> 27); // Pega a segunda posição da multiplicação transformando os bits ao seu redor em zero
-	unsigned short multPosicao3 = ((multPosicoes << 15) >> 27); // Pega a terceira posição da multiplicação transformando os bits ao seu redor em zero
-	unsigned short multPosicao4 = ((multPosicoes << 10) >> 27); // Pega a quarta posição da multiplicação transformando os bits ao seu redor em zero
-	unsigned short multPosicao5 = ((multPosicoes << 5) >> 27); // Pega a quinta posição da multiplicação transformando os bits ao seu redor em zero
-	unsigned short multPosicao6 = multPosicoes >> 27; // Pega a sexta posição da multiplicação transformando os bits ao seu redor em zero
+	unsigned short multPosicao1 = multPosicoes >> 27; // Pega a primeira posição da multiplicação transformando os bits ao seu redor em zero
+	unsigned short multPosicao2 = ((multPosicoes << 5) >> 27); // Pega a segunda posição da multiplicação transformando os bits ao seu redor em zero
+	unsigned short multPosicao3 = ((multPosicoes << 10) >> 27); // Pega a terceira posição da multiplicação transformando os bits ao seu redor em zero
+	unsigned short multPosicao4 = ((multPosicoes << 15) >> 27); // Pega a quarta posição da multiplicação transformando os bits ao seu redor em zero
+	unsigned short multPosicao5 = ((multPosicoes << 20) >> 27); // Pega a quinta posição da multiplicação transformando os bits ao seu redor em zero
+	unsigned short multPosicao6 = ((multPosicoes << 25) >> 27); // Pega a sexta posição da multiplicação transformando os bits ao seu redor em zero
 
 	cout << endl; // Pula uma linha
 	cout << "Valor Codificado = " << somaCripto32 << " "
