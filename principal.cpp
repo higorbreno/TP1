@@ -41,8 +41,8 @@ int main() {
 
 	
 	cout << endl; // Pula uma linha
-	cout << "Operando em 32 bit = " << xxma << endl; // Mostra o valor de 32 bits que contém as variáveis atribuidas pelo usuário
-	cout << "Operando em 32 bit = " << xxmb << endl; // Mostra o valor de 32 bits que contém as variáveis atribuidas pelo usuário
+	cout << "Operandos em 32 bit = " << xxma << endl; // Mostra o valor de 32 bits que contém as variáveis atribuidas pelo usuário
+	cout << "Operandos em 32 bit = " << xxmb << endl; // Mostra o valor de 32 bits que contém as variáveis atribuidas pelo usuário
 
 	unsigned int soma = Soma(xxma, xxmb); // Soma os valores armazenados nas variáveis de 32 bits
 	unsigned int mult = Mult(xxma, xxmb); // Multiplica os valores armazenados nas variáveis de 32 bits
