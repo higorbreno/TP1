@@ -4,11 +4,11 @@
 unsigned int Armazena(unsigned char primeiro, unsigned char segundo, unsigned char terceiro, unsigned char quarto) {
 	unsigned int bit32 = primeiro; // Armazena o primeiro valor na variável "bit32"
 	bit32 = bit32 << 8; // Move os bits 8 locais para a esquerda
-	bit32 += segundo; // Armazena o segundo valor na variável "bit32"
+	bit32 = bit32 | segundo; // Armazena o segundo valor na variável "bit32"
 	bit32 = bit32 << 8; // Move os bits 8 locais para a esquerda
-	bit32 += terceiro; // Armazena o terceiro valor na variável "bit32"
+	bit32 = bit32 | terceiro; // Armazena o terceiro valor na variável "bit32"
 	bit32 = bit32 << 8; // Move os bits 8 locais para a esquerda
-	bit32 += quarto; // Armazena o quarto valor na variável "bit32"
+	bit32 = bit32 | quarto; // Armazena o quarto valor na variável "bit32"
 
 	return bit32; // Retorna os quatro valores armazenados em uma variável de 32 bits
 }
